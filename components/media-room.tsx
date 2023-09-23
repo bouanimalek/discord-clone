@@ -21,6 +21,7 @@ export const MediaRoom = ({ chatId, video, audio }: MediaRoomPrpos) => {
     if (!user?.firstName || !user?.lastName) return;
 
     const name = `${user.firstName} ${user.lastName}`;
+
     (async () => {
       try {
         const resp = await fetch(
