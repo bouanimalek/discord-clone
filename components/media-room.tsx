@@ -46,7 +46,7 @@ export const MediaRoom = ({ chatId, video, audio }: MediaRoomPrpos) => {
 
   return (
     <LiveKitRoom
-      data-lk-team="default"
+      data-lk-theme="default"
       serverUrl={process.env.NEXT_PUBLIC_LIVEKIT_URL}
       token={token}
       connect={true}
